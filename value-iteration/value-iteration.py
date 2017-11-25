@@ -66,8 +66,6 @@ def expected_value(current_state, policy, values, blocked_states):
         ev += get_value(action['state'], values, current_value, blocked_states) * action['prob']
 
     ev *= DISC_FACTOR
-    # if ev:
-    #     print("---GOT ", state, action, 'v1', value1, 's2', state2, 'v2', value2, 's3', state3, 'v3', value3, ev)
     return ev
 
 def main():
