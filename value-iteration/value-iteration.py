@@ -23,7 +23,13 @@ DISC_FACTOR = .9
 def new_states():
     return np.zeros((HEIGHT, WIDTH))
 
-def next_policies(state, ignored_states):
+def out_of_bounds(state, blocked_states):
+    (row, col) = state
+    if col < 0 or row < 0 or col >= WIDTH or row >= HEIGHT or state in blocked_states:
+        return True
+    return False
+
+def next_policies(state, blocked_states):
     def add_action(action, prob, list):
         if action == ACT_LEFT:
             offset = (0, -1)
@@ -35,7 +41,7 @@ def next_policies(state, ignored_states):
             offset = (1, 0)
 
         next = tuple(map(operator.add, state, offset))
-        if not next in ignored_states:
+        if not out_of_bounds(next, blocked_states):
             list.append({
                 'action': action,
                 'state': next,
@@ -65,7 +71,7 @@ def expected_value(current_state, policy, values, blocked_states):
 
     def get_value(state, values, fallback_value, blocked_states):
         (row, col) = state
-        if col < 0 or row < 0 or col >= WIDTH or row >= HEIGHT or state in blocked_states:
+        if out_of_bounds(state, blocked_states):
             return fallback_value
         return values[state]
 
