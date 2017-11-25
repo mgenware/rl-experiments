@@ -87,7 +87,7 @@ def main():
     values = new_states()
     # set goal and dead end
     values[0, 3] = 1
-    values[1, 3] = -1
+    values[1, 3] = -9
 
     # selected actions
     actions = np.zeros((HEIGHT, WIDTH), dtype=str)
