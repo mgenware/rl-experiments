@@ -90,12 +90,10 @@ def main():
     ignored_states = blocked_states | end_states
 
     enumerable_values = [index for index in np.ndindex(values.shape) if not index in ignored_states]
-    print('Enumerated states ', enumerable_values)
 
     for _ in range(iteration_count):
         new_values = np.copy(values)
         for state in enumerable_values:
-            print("eee ", state)
             policies = next_policies(state, blocked_states)
             # max expected value
             new_values[state] = max([expected_value(state, policy, values, blocked_states) for policy in policies])
