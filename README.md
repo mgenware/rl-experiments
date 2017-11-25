@@ -16,6 +16,7 @@ Apply value iteration on a classic grid world.
 * discount factor: `0.9`.
 * end states: `+1` and `-9`.
 
+Iteration: `1`:
 ```sh
 python value-iteration.py 1
 ```
@@ -27,6 +28,7 @@ Output:
    0.0←    0.0←    0.0←    0.0↓
 ```
 
+Iteration: `1000`:
 ```sh
 python value-iteration.py 1000
 ```
