@@ -99,7 +99,8 @@ def main():
             new_values[state] = max([expected_value(state, policy, values, blocked_states) for policy in policies])
         values = new_values
     
-    print(np.matrix(values))
+    result = np.round(np.matrix(values), 3)
+    print(result)
 
 if __name__ == "__main__":
     main()
