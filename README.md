@@ -18,6 +18,8 @@ source bin/activate
 python pmf-and-cdf/main.py 1
 ```
 
+<img src="_assets/pmf-and-cdf.png" width="558" height="435">
+
 Output:
 ```
 # pmf
