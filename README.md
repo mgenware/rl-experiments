@@ -15,7 +15,7 @@ source bin/activate
 ## pmf-and-cdf
 
 ```sh
-python pmf-and-cdf/main.py 1
+python pmf-and-cdf/main.py
 ```
 
 <img src="_assets/pmf-and-cdf.png" width="558" height="435">
