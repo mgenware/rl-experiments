@@ -11,12 +11,20 @@ pmf = occurrences / sum
 
 print(pmf)
 
-# plotting
+# plot pmf
 bars = np.arange(len(colors))
 fig, ax = plt.subplots(2)
 
 ax[0].bar(bars, pmf, color=colors)
 ax[0].set_xticks(bars)
 ax[0].set_xticklabels(colors)
+
+# plot cdf
+cdf = np.cumsum(pmf)
+ax[1].step(bars, cdf)
+ax[1].set_xticks(bars)
+ax[1].set_xticklabels(colors)
+
+print(cdf)
 
 plt.show()
