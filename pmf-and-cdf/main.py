@@ -16,5 +16,7 @@ bars = np.arange(len(colors))
 fig, ax = plt.subplots(2)
 
 ax[0].bar(bars, pmf, color=colors)
+ax[0].set_xticks(bars)
+ax[0].set_xticklabels(colors)
 
 plt.show()
