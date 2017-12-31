@@ -21,7 +21,7 @@ ax[0].set_xticklabels(colors)
 
 # plot cdf
 cdf = np.cumsum(pmf)
-ax[1].step(bars, cdf)
+ax[1].step(bars, cdf, where='mid')
 ax[1].set_xticks(bars)
 ax[1].set_xticklabels(colors)
 
