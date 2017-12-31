@@ -9,6 +9,23 @@ virtualenv -p python3 .
 source bin/activate
 ```
 
+# Experiments
+
+
+## pmf-and-cdf
+
+```sh
+python pmf-and-cdf/main.py 1
+```
+
+Output:
+```
+# pmf
+[ 0.13333333  0.13333333  0.1         0.33333333  0.3       ]
+# cdf
+[ 0.13333333  0.26666667  0.36666667  0.7         1.        ]
+```
+
 ## value-iteration
 Apply value iteration on a classic grid world.
 
@@ -18,7 +35,7 @@ Apply value iteration on a classic grid world.
 
 Iteration: `1`:
 ```sh
-python value-iteration.py 1
+python value-iteration/main.py 1
 ```
 
 Output:
@@ -30,7 +47,7 @@ Output:
 
 Iteration: `1000`:
 ```sh
-python value-iteration.py 1000
+python value-iteration/main.py 1000
 ```
 
 Output:
