@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 colors = ['gold', 'yellowgreen', 'c', 'royalblue', 'pink']
 
 # randomly generate the number of occurrences of each color
-occurrences = np.random.randint(10, size=len(colors))
+occurrences = np.random.randint(10, size=len(colors)) + 1
 # pmf of the distribution
 sum = np.sum(occurrences)
 pmf = occurrences / sum
