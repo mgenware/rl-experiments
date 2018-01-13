@@ -1,5 +1,5 @@
-# RL Experiments
-RL Experiments.
+# Statistics Projects
+Statistics Projects.
 
 ## Setup
 **Assume Python 3 and virtualenv installed**.
