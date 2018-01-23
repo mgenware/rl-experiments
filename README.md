@@ -8,3 +8,7 @@ Statistics Projects.
 virtualenv -p python3 .
 source bin/activate
 ```
+
+# Experiments
+* [PMF and CDF](pmf-and-cdf)
+* [Value Iteration](value-iteration)
