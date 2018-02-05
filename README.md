@@ -2,11 +2,14 @@
 Statistics Projects.
 
 ## Setup
-**Assume Python 3 and virtualenv installed**.
+**Assume Python 3 installed**.
 
 ```sh
-virtualenv -p python3 .
+# active venv
 source bin/activate
+
+# install packages
+pip install -r requirements.txt
 ```
 
 # Experiments
