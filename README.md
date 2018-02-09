@@ -13,6 +13,7 @@ pip install -r requirements.txt
 ```
 
 # Experiments
+* [Beta Distribution - PDF Plot](beta-distribution-pdf)
 * [Biased Binomial Distribution - Calculating PMF](biased-binomial-distribution-pmf)
 * [Biased Binomial Distribution - PMF Plot](biased-binomial-distribution-pmf-plot)
 * [Combinations and Pascal's Triangle](combinations-pascals-triangle)
